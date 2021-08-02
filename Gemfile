@@ -1,7 +1,13 @@
+
 source "https://rubygems.org"
 
 gem "sinatra"
-gem "sinatra-contrib"
-gem "sqlite3"
-gem "activerecord"
-gem "sinatra-activerecord"
+gem "sinatra-reloader"
+gem 'sqlite3', '~> 1.3', '>= 1.3.11'
+gem 'activerecord', '~> 5.0', '>= 5.0.0.1'
+gem 'sinatra-activerecord', '~> 2.0', '>= 2.0.23'
+gem 'sinatra-contrib', '~> 2.1'
+
+group :development do
+  gem 'tux', '~> 0.3.0'
+end
